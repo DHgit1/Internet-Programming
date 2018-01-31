@@ -51,21 +51,27 @@ td strong
 ul
 {
     text-align: left;
-    padding-left: 200px;
+    padding-left: 300px;
 }
 .hobby
 {
     color: yellow;
 }
-#me, #welcomeText 
+#me
 {
     float: left;
+    padding-left: 200px;
+}
+#welcomeText
+{
+    padding-top: 50px;
+    text-align: left;
 }
 #myPicture
 {
     border-radius: 40px;
 }
-#home
+#home, #about
 {
     color: #f49e42;
 }
