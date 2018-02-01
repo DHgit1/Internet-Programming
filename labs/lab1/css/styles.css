@@ -51,7 +51,7 @@ td strong
 ul
 {
     text-align: left;
-    padding-left: 300px;
+    padding-left: 30%;
 }
 .hobby
 {
@@ -60,7 +60,7 @@ ul
 #me
 {
     float: left;
-    padding-left: 200px;
+    padding-left: 20%;
 }
 #welcomeText
 {
@@ -71,7 +71,11 @@ ul
 {
     border-radius: 40px;
 }
-#home, #about
+#home, #about, #contact
 {
     color: #f49e42;
+}
+h1
+{
+    font-family: 'Anton', sans-serif;
 }

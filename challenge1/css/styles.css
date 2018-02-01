@@ -1,0 +1,66 @@
+.season img  {
+    width: 40%;
+    display: inline;
+}
+
+.season img:hover  {
+    width: 45%;
+}
+
+header 
+{
+    font-family: Oswald;
+    color: yellow;
+}
+
+.season 
+{
+    font-family: Oswald;
+    color: white;
+    display: inline;
+    margin: 0;
+}
+
+
+span {
+    display: inline;
+    margin: 0;
+    width: 45%;
+    color: white;
+    
+}
+#text
+{
+    font-family: Oswald;
+}
+
+#text span {
+    padding: 10%;
+}
+
+body
+{
+    background-color: black;
+    text-align: center;
+    font-family: Oswald;
+}
+
+#spring {
+    border-top-left-radius: 20%;
+}
+
+#summer {
+    border-top-right-radius: 20%;
+}
+
+#fall {
+    border-bottom-left-radius: 20%;
+}
+
+#winter {
+    border-bottom-right-radius: 20%;
+}
+
+#spring-text {
+    text-align: left;
+}
