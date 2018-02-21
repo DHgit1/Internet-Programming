@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['humanTotalWins'])) {
+    $_SESSION['humanTotalWins'] = 0;
+    $_SESSION['computerTotalWins'] = 0;
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -63,17 +70,21 @@
         </div>
         <br /> <br/> <br /> <br/> <br /> <br/> <br /> <br/>
         <?php
-        
-                
                 echo "<div id='result'><b>";
                 if ($card1 > $card2) {
+                    $_SESSION['humanTotalWins']++;
                     echo "Human Wins";
                 } else if($card2 > $card1){
+                    $_SESSION['computerTotalWins']++;
                     echo "Computer Wins";
                 } else {
                     echo "Tie";
                 }
-                echo "</b></div>"
+                echo "</b></div>";
+                
+                echo "Human Total Wins: " . $_SESSION['humanTotalWins'];
+                echo "<br />";
+                echo "Computer Total Wins: " . $_SESSION['computerTotalWins'];
         ?>
         
     </body>
