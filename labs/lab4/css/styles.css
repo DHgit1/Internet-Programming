@@ -1,16 +1,45 @@
-    body{
-        opacity:0.9;
-        width:100%;
-        text-align:center;
-        color:yellow;
-    }
-    
-    input {
-        font-size: 3em;
-        color: black;
-    }
-    
-    #carousel-example-generic {
-         margin: 0 auto;   
-         width: 700px;
-    }
+body{
+    opacity:0.9;
+    width:100%;
+    text-align: center;
+    color: yellow;
+}
+#title {
+    background-color: black;
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+}
+input {
+    font-size: 2em;
+    color: yellow;
+    border-radius: 10px;
+    background-color: black;
+}
+input[type=radio] {
+    font-size: 3em;
+    color: black;
+    border-radius: 20px;
+}
+#rb {
+    display: inline;
+    border-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    color: yellow;
+}
+#carousel-example-generic {
+     margin: 0 auto;   
+     width: 700px;
+}
+#carouselExampleIndicators {
+    width: 500px;
+    margin: 0 auto;
+}
+select {
+    font-size: 1.5em;
+}
