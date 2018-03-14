@@ -1,0 +1,116 @@
+body {
+    background-image: url(/dhight/hw/hw3/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.error {
+    color: #FF0000;
+}
+#complete {
+    font-size: 1.3em;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    background: rgba(255, 100, 100, .8);
+    padding-bottom: 3px;
+    border-style: dashed;
+}
+#foot {
+    background: rgba(225, 225, 225, .5);
+    width: 25%;
+    margin: 0 auto;
+}
+#title {
+    font-family: "Courier New", Courier, monospace;
+    padding-bottom: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+#title1 {
+    font-size: 3em;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 30px;
+}
+#title1:hover {
+    color: red;
+    transition: .3s;
+    font-size: 3.3em;
+}
+.floatLeft { 
+    float: left;
+}
+.floatRight { 
+    float: right;
+}
+footer, #title {
+    text-align: center;
+}
+hr {
+    width: 95%;
+    border-color: black;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 25px;
+}
+label {
+    text-align: left;
+}
+input[type=radio] {
+    margin: 5px 0 5px 0;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+input[type=checkbox]{
+    margin-bottom: 20px;
+}
+select {
+   margin-bottom: 15px; 
+}
+input[type=text], input[type=password] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    width:100%;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+button:hover {
+    opacity:1;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+.container {
+    padding: 16px;
+    width: 40%;
+    border:1px solid #ccc;
+    vertical-align: middle;
+    margin: 0 auto;
+    background-color: white;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

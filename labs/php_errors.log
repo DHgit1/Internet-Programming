@@ -1,0 +1,9 @@
+[12-Mar-2018 22:13:43 UTC] PHP Fatal error:  Call to undefined function displaySearchResults() in /home/ubuntu/workspace/dhight/labs/lab6/index.php on line 38
+[12-Mar-2018 22:13:43 UTC] PHP Stack trace:
+[12-Mar-2018 22:13:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/dhight/labs/lab6/index.php:0
+[12-Mar-2018 22:14:20 UTC] PHP Fatal error:  Call to undefined function displaySearchResults() in /home/ubuntu/workspace/dhight/labs/lab6/index.php on line 38
+[12-Mar-2018 22:14:20 UTC] PHP Stack trace:
+[12-Mar-2018 22:14:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/dhight/labs/lab6/index.php:0
+[12-Mar-2018 22:14:22 UTC] PHP Fatal error:  Call to undefined function displaySearchResults() in /home/ubuntu/workspace/dhight/labs/lab6/index.php on line 38
+[12-Mar-2018 22:14:22 UTC] PHP Stack trace:
+[12-Mar-2018 22:14:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/dhight/labs/lab6/index.php:0
