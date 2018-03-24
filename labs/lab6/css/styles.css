@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+hr {
+    border-color: black;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 25px;
+}
+input[type=submit] {
+    width: 15%;
+}
+#forms {
+    width: 30%;
+    text-align: left;
+    margin: 0 auto;
+}
+#results {
+    text-align: left;
+}

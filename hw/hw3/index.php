@@ -50,7 +50,7 @@
             <label for="yes">Yes</label><br>
             <input id="no" type="radio" name="pineapple" value="no"
             <?php if($_SESSION['pineapple'] == "no") { echo "checked=\"checked\""; } ?>>
-            <label for="no">No</label><br> <br>
+            <label for="no">No</label><br><br>
             <label for="favcity">Choose your favorite topping:</label>
             <select id="favtop" name="select">
                 <?php
