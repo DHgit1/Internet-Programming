@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    text-align:center;
+    margin:0 auto;
+}
+#td-text {
+    font-size: 2em;
+    text-align:center;
+    vertical-align:middle;
+    color: black;
+}
+#td-quantity {
+    width: 5px;
+    text-align:center;
+    vertical-align:middle;
+}
+.table {
+    margin:0 auto;
+    border:3px solid rgba(225, 50, 50, .9);;
+}
+.tableinfo {
+    margin:0 auto;
+    border:3px solid rgba(0, 0, 0, 1);
+}
+th {
+    font-size: 1.5em;
+    background: rgba(225, 50, 50, .9);
+    color: black;
+    text-align:center;
+    vertical-align:middle;
+}
+td {
+    background: rgba(225, 225, 225, .9);
+}
+#td-cell {
+    width: 5px;
+    text-align:center;
+    vertical-align:middle;
+}
+#td-info {
+    padding: 5px;
+    text-align:center;
+    vertical-align:middle;
+    border: 1px solid black;
+}
+.btn-danger {
+    font-size: 1.5em;
+    background-color: rgba(225, 50, 50, .9);
+    border-color: black;
+}
+#infoimg {
+    float:left;
+}
+#box {
+    display: inline-block;
+    font-size: larger;
+    width: 70%;
+    background: rgba(225, 225, 225, .9);
+    border:3px solid rgba(225, 0, 0, 1);
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-style: dashed;
+}
+p {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 1);;
+}
+input[type=text] {
+    padding: 5px;
+    border-color: black;
+    background: rgba(225, 0, 0, .6);
+}
+input[type=text]:focus{
+    background-color: rgba(225, 0, 0, .9);
+    outline: none;
+}
+input, select, textarea{
+    color: rgba(0, 0, 0, 1);
+}
+textarea:focus, input:focus {
+    color: rgba(0, 0, 0, 1);
+}
+::placeholder {
+    color: rgba(0, 0, 0, 1);
+    opacity: .8;
+}

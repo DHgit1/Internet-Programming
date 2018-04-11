@@ -66,7 +66,6 @@
                 <input type="submit" value="Submit" class="btn btn-default">
                 <br /><br />
             </form>
-            
             <!-- Display Search Results -->
             <?php displayResults(); ?>
         </div>
