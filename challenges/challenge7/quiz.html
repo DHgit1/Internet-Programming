@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Quiz </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#submit").click(function(){
+                    if($("#q1").val() == "1"){
+                        $("#feedback1").html("Correct! The capital is Sacramento!");
+                    } else {
+                        $("#feedback1").html("Incorrect! The capital is Sacramento!");
+                    }
+                    if($("#q2").val() == 3){
+                        $("#feedback2").html("Correct! The capital is Boise!");
+                    } else {
+                        $("#feedback2").html("Incorrect! The capital is Boise!");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        1. What is the capital of California?
+              <select id ="q1">
+          <option value="1">Sacramento</option>
+          <option value="2">Seaside</option>
+          <option value="3">Boise</option>
+          <option value="4">Audi</option>
+        </select>
+        <div id="feedback1"></div>
+        <br />
+        2. What is the capital of Idaho?
+        <select id ="q2">
+          <option value="1">Sacramento</option>
+          <option value="2">Seaside</option>
+          <option value="3">Boise</option>
+          <option value="4">Audi</option>
+        </select>
+        <div id="feedback2"></div><br />
+        
+        
+        <button id="submit">Submit Quiz</button>
+    </body>
+</html>

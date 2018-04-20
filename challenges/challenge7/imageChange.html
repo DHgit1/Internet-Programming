@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Quiz </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var pic1 = "now_you_see_me.png";
+                var pic2 = "now_you_dont.png";
+                $("#withoutCat").hide();
+                $("#submit2").hide();
+                $("#display2").hide();
+                $("#submit").click(function(){
+                    $("#withCat").hide();
+                    $("#withoutCat").show();
+                    $("#submit").hide();
+                    $("#submit2").show();
+                    $("#display2").show();
+                    $("#display").hide();
+                });
+                $("#submit2").click(function(){
+                    $("#withCat").show();
+                    $("#withoutCat").hide();
+                    $("#submit").show();
+                    $("#submit2").hide();
+                    $("#display2").hide();
+                    $("#display").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img id="withCat" src="img/now_you_see_me.png">
+        <img id="withoutCat" src="img/now_you_dont.png">
+        <h2 id="display">Now you see me...</h2>
+        <h2 id="display2">Now you don't...</h2>
+        <button id="submit">Do Magic!!</button>
+        <button id="submit2">Repeat</button>
+    </body>
+</html>
