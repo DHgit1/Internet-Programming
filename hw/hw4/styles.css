@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    background-attachment: fixed;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 110%;
+    text-align:center;
+    margin:0 auto;
+}
+b {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 35px;
+    float: left;
+}
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    float: right;
+}
+strong {
+    color : white;
+}
+hr {
+    width: 75%;
+    border-color: black;
+    background-color: black;
+    height: 3px;
+}
+h1 {
+    color: white;
+    font-size: 5em;
+}
+h1:hover {
+    color: #f49e42;
+    transition: .3s;
+    font-size: 5.3em;
+}
+.logoHeader {
+    height: 75px;
+    vertical-align: middle;
+    text-align: center;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+#input {
+    display: inline;
+    color: white;
+}
+#title {
+    width: 50%;
+    margin: 0 auto;
+}
+#row1, #row2 {
+    padding: 5px;
+}
+#form {
+    display: inline-block;
+    border-color: white;
+    border-style: dotted;
+    height: 112px;
+    padding: 15px;
+    padding-top: 27px;
+    border-radius: 20px;
+    color: White;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+#div1, #div2 {
+    display: inline-block;
+    border-color: white;
+    border-style: dotted;
+    height: 115px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 2em;
+    color: White;
+    vertical-align: middle;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+#output {
+    display: inline-block;
+    border-color: white;
+    border-style: dotted;
+    border-radius: 20px;
+    font-size: 1.3em;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: White;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+#error1, #error2, #e1, #e2 {
+    color: red;
+    display: inline;
+    float:left;
+}
+#submit {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#player1, #player2 {
+    border: 0 none;
+    padding-left: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    transition: .2s;
+    font-size: 1.4em;
+}
+#reset{
+    background-color: rgba(255, 255, 255, .9);
+    padding: 10px 30px;
+    font-size: 2em;
+    text-align: center;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#reset:hover {
+    transition: .2s;
+    font-size: 2.2em;
+}
+#otter {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 50%;
+}
