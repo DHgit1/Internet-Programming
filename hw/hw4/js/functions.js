@@ -44,8 +44,8 @@ function readNames(){
 }
 function play(){
     for(var i=0; i<5; i++){
-        p1.push(Math.floor(Math.random()*(5)+1));
-        p2.push(Math.floor(Math.random()*(5)+1));
+        p1.push(Math.floor(Math.random()*(6)+1));
+        p2.push(Math.floor(Math.random()*(6)+1));
     }
     for(var i in p1) { t1 += p1[i]; }
     for(var i in p2) { t2 += p2[i]; }
