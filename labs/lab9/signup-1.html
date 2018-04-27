@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AJAX: Sign Up Page</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+            function validateForm() {
+                if($("#password").val() == $("#repeat").val()){
+                    $("#passwordError").html("");
+                } else {
+                    $("#passwordError").html("Passwords do not match!");
+                }
+                return false;
+            }
+        </script>
+        <script>
+        $(document).ready(function(){
+            $("#username").change(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "checkUsernameAPI.php",
+                    dataType: "json",
+                    data: { "username" : $("#username").val()},
+                    success: function(data,status) {
+                        if(!data){
+                            if($("#username").val()== "") 
+                                $("#usernameError").html("");
+                            else {
+                                $("#usernameError").html("");
+                                $("#usernameError").css("color", "green")
+                                $("#usernameError").html("Username is available");
+                            }
+                        } else {
+                            $("#usernameError").html("");
+                            $("#usernameError").css("color", "red")
+                            $("#usernameError").html("Username is already taken");
+                        }
+                    }
+                });
+            });
+            $("#zipCode").change(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                    dataType: "json",
+                    data: { "zip": $("#zipCode").val()},
+                    success: function(data,status) {
+                        if(data){
+                            $("#city").html(data.city);
+                            $("#lat").html(data.latitude);
+                            $("#long").html(data.longitude);
+                            $("#zipError").html("");
+                        } else {
+                            $("#city").html("");
+                            $("#lat").html("");
+                            $("#long").html("");
+                            $("#zipError").html(" Zip code not found");
+                        }
+                    }
+                });
+            });
+            $("#state").change(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                    dataType: "json",
+                    data: { "state": $("#state").val()},
+                    success: function(data,status) {
+                        $("#county").html('<option>Select One</option>');
+                        for(var i=0; i<Object.keys(data).length; i++)
+                            $("#county").append('<option value='+i+'>'+data[i].county+'</option>');
+                    }
+                });
+            });
+        })
+        </script>
+    </head>
+    <body>
+        <h1> Sign Up Form </h1>
+        <div id="container">
+        <form onsubmit="return validateForm()">
+            <fieldset>
+               <h3>Sign Up</h3>
+               <hr>
+               <div id="inside">
+                First Name:  <input class="form-control" type="text">
+                Last Name:   <input class="form-control" type="text">
+                Email:       <input class="form-control" type="text">
+                Phone Number:<input class="form-control" type="text"><br>
+                Zip Code:    <input class="form-control" type="text" id="zipCode">
+                <span class="error" id="zipError" style="color:red"></span>
+                City: <span id="city"></span>
+                <br>
+                Latitude: <span id="lat"></span>
+                <br>
+                Longitude: <span id="long"></span>
+                <br><br>
+                State: 
+                <select class="form-control" id="state">
+                    <option value="">Select One</option>
+                    <option value="ca"> California</option>
+                    <option value="ny"> New York</option>
+                    <option value="tx"> Texas</option>
+                    <option value="va"> Virginia</option>
+                </select>
+                Select a County: <select class="form-control" id="county"></select>
+                Desired Username: <input class="form-control" id="username" type="text">
+                <span class="error" id="usernameError" style="color:red"></span><br>
+                Password: <input class="form-control" id="password" type="password">
+                Type Password Again: <input class="form-control" id="repeat" type="password">
+                <span class="error" id="passwordError" style="color:red"></span><br>
+                </div>
+                <input class="btn btn-success" type="submit" value="Sign up!">
+            </fieldset>
+        </form>
+        </div>
+        <h1 id="validated" style="color:lime"></h1>
+    </body>
+</html>
