@@ -1,0 +1,66 @@
+body {
+    text-align:center;
+    margin:0 auto;
+    color: black;
+}
+hr {
+    width: 95%;
+    border-color: black;
+    background-color: black;
+    height: 3px;
+}
+input {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+}
+input[type=text], textarea{
+    margin-left: 5px;
+}
+#username{
+    margin-left: 0px !important;
+}
+select {
+    margin:5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+}
+.form-control{
+    color: black;
+    background-color: rgba(0, 0, 0, .1);
+}
+.container {
+    display: inline-block;
+    font-size: 1.2em;
+    border-color: black;
+    border-style: solid;
+    width: 25%;
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .9);
+}
+#inside {
+    text-align:left;
+}
+#addMovie{
+    margin: 10px;
+    float: left;
+}
+th {
+    font-size: 5em;
+    color: black;
+    text-align:center;
+    vertical-align:middle;
+}
+#td-text {
+    font-size: 1.6em;
+    text-align:center;
+    vertical-align:middle;
+    color: black;
+}
+#td-cell {
+    text-align:center;
+    vertical-align:middle;
+}
