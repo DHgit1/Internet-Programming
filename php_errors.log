@@ -1,0 +1,5 @@
+[09-May-2018 06:46:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/dhight/final/deleteProduct.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/dhight/final/deleteProduct.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/dhight/final/deleteProduct.php on line 10
